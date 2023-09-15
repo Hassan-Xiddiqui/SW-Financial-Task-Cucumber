@@ -1,7 +1,7 @@
 Some Important Key Points:
 
 1. This project is made via using IDE named as IntelliJ Idea
-2. In the Dependency folder there is a Chrome Driver (ver.117.0)
+2. In the Dependency folder there is a Chrome Driver (ver.117.0) & MS Edge Driver (ver.116)
 3. If you have previous version of chromedriver you can replace it with your own current using one
 4. JDK version 19.0 was used in this framework
 5. In Step Definition file there are 2 methods i.e "PageObject.chromeConfig()" and "PageObject.edgeConfig()"

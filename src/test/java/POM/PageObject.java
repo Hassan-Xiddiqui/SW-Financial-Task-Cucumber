@@ -60,7 +60,6 @@ public class PageObject {
         List<WebElement> productContainers = driver.findElements(By.cssSelector(".inventory_item"));
         for (WebElement productContainer : productContainers) {
             WebElement productPrice = productContainer.findElement(By.cssSelector(".inventory_item_price"));
-            System.out.println(productPrice.getText().substring(1));
             if (Double.parseDouble(productPrice.getText().substring(1)) < 15.99)
             {   driver.findElement(By.cssSelector(".btn.btn_primary.btn_small.btn_inventory")).click(); }
 
@@ -77,7 +76,6 @@ public class PageObject {
         List<WebElement> cartContainers = driver.findElements(By.cssSelector(".cart_item"));
         for (WebElement cartContainer : cartContainers) {
             WebElement productPrice = cartContainer.findElement(By.cssSelector(".inventory_item_price"));
-            System.out.println(productPrice.getText().substring(1));
             if (Double.parseDouble(productPrice.getText().substring(1)) > 9) {
                 driver.findElement(By.cssSelector(".btn.btn_secondary.btn_small.cart_button")).click();
             }

@@ -4,6 +4,9 @@ Some Important Key Points:
 2. In the Dependency folder there is a Chrome Driver (ver.117.0)
 3. If you have previous version of chromedriver you can replace it with your own current using one
 4. JDK version 19.0 was used in this framework
+5. In Step Definition file there are 2 methods i.e "PageObject.chromeConfig()" and "PageObject.edgeConfig()"
+    You can use either of the 2 as by default i have enabled chromeConfig so the test will run on chrome
+    If you enable edgeConfig it will run the test on Edge browser
 
 To Execute The Test:
 

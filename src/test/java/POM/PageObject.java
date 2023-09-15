@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.interactions.Actions;
 
 import java.time.Duration;
@@ -18,6 +19,18 @@ public class PageObject {
         System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\Dependency\\chromedriver.exe");
 
         driver = new ChromeDriver();
+
+        action = new Actions(driver);
+        driver.get("https://www.saucedemo.com/");
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        driver.manage().window().maximize();
+    }
+
+//  To Open Edge Browser and Navigate to the URL
+    public static void edgeConfig() {
+        System.setProperty("webdriver.edge.driver", System.getProperty("user.dir") + "\\Dependency\\msedgedriver.exe");
+
+        driver = new EdgeDriver();
 
         action = new Actions(driver);
         driver.get("https://www.saucedemo.com/");

@@ -19,4 +19,9 @@ To View Page Object Model:
 1. Simply navigate to src/test/java/POM/PageObject.java
 2. Open the file and view all the Page Object Models methods and there are also comments mention so that the person viewing can understand
 
+To View Features File:
+
+1. Simply navigate to src/test/resources/task.feature
+2. Open the file and you can view gherkin syntax
+
 After Executing the Test an allure folder will be generated with .json files in it, you can view them in the browser.

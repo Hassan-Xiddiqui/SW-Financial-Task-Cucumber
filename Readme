@@ -3,6 +3,7 @@ Some Important Key Points:
 1. This project is made via using IDE named as IntelliJ Idea
 2. In the Dependency folder there is a Chrome Driver (ver.117.0)
 3. If you have previous version of chromedriver you can replace it with your own current using one
+4. JDK version 19.0 was used in this framework
 
 To Execute The Test:
 
